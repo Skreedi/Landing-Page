@@ -1,0 +1,304 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 15px/1.5 'Roboto', sans-serif;
+    background: #575757;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #393939;
+    color: #ec7f37;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom: #FF5A09 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header #logo h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .highlight, header .current a {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ec7f37;
+}
+
+#showcase {
+    min-height: 200px;
+    max-height: 400px;
+    background-image: url("img/showcase-bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    background: url("img/selfie.jpg");
+    background-size: contain;
+}
+
+.info {
+    width: 500px;
+    height: 300px;
+    padding-left: 20px;
+    margin-left: 20px;
+    background-color: rgba(57, 57, 57, 0.7);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#overview {
+    margin-top: 50px;
+}
+
+.points {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.points .bulletpoint {
+    width: 200px;
+    text-align: center;
+    background-color: #393939;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.points .bulletpoint p {
+    text-align: justify;    
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 400px;
+    height: 500px;
+    background-color: #929292;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.projScreen {
+    width: 100%;
+    height: 300px;
+    background-image: url("img/closed.jpg");
+    background-size: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.about {
+    background-color: #929292;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: initial;
+}
+
+.contact_form {
+    background-color: #929292;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+form input, form textarea {
+    padding: 5px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+input {
+    border-radius: 5px;
+    outline: none;
+}
+
+.input {
+    padding-top: 20px;
+}
+
+label {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.button_form {
+    margin: 30px 0;
+    width: 93%;
+    border: none;
+    background-color: #ff6600;
+    text-decoration: none;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.button_form:hover {
+    background-color: #ec7f37;
+}
+
+.button_form:focus {
+    outline: none;
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 100px;
+    color: #ffffff;
+    background-color: #393939;
+    border-top: #FF5A09 3px solid;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #FF5A09;
+    padding: 0 20px;
+}
+
+.bottomitems {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottomitems .socialmedia {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomitems .socialmedia a {
+    text-decoration: none;
+}
+
+.bottomitems .socialmedia a .facebook:hover {
+    color: #3b5998;
+}
+
+.bottomitems .socialmedia a .twitter:hover {
+    color: #00aced;
+}
+
+.bottomitems .socialmedia a .instagram:hover {
+    color: #E1306C;
+}
+
+.bottomitems .socialmedia a .github:hover {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    header, nav, header nav li {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .container {
+        width: 90%;
+    }
+
+    .info {
+        font-size: 14px;
+        height: 200px;
+        width: 80%;
+    }
+
+    .banner {
+        align-items: center;
+    }
+
+    .bulletpoint {
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    .project {
+        height: 450px;
+        width: 267px;
+    }
+
+    .projScreen {
+        height: 200px;
+        width: 267px;
+    }
+
+    .article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
