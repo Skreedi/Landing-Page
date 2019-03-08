@@ -73,15 +73,6 @@ header a:hover {
     justify-content: center;
 }
 
-.photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    overflow: hidden;
-    background: url("img/selfie.jpg");
-    background-size: contain;
-}
-
 .info {
     width: 500px;
     height: 300px;
