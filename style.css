@@ -181,6 +181,7 @@ header a:hover {
     color: var(--white-font);
     margin: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .projScreen {
@@ -232,10 +233,10 @@ header a:hover {
     100% {right: 0;}
 }
 
-.about h3 {
-    font-family: 'Roboto', sans-serif;
+.tech {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    padding-bottom: 10px;
 }
 
 .contact_form {
