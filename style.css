@@ -118,6 +118,7 @@ header a:hover {
 }
 
 .points .bulletpoint {
+    position: relative;
     width: 300px;
     text-align: center;
     background-color: var(--item-background-color);
@@ -128,6 +129,39 @@ header a:hover {
 
 .points .bulletpoint p {
     text-align: justify;    
+}
+
+#first {
+    animation-name: first;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes first {
+    0% {left: -1000px;}
+    100% {left: 0;}
+}
+
+#second {
+    animation-name: second;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes second {
+    0% {bottom: -1000px;}
+    100% {bottom: 0;}
+}
+
+#third {
+    animation-name: third;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes third {
+    0% {right: -1000px;}
+    100% {right: 0;}
 }
 
 .projects {
@@ -154,7 +188,27 @@ header a:hover {
     border-top-right-radius: 10px;
 }
 
+#my_photo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-image: url("img/selfie.jpg");
+    background-size: contain;
+    border-radius: 100%;
+    animation-name: photo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes photo {
+    0% {left: -1000px;}
+    100% {left: 0;}
+}
+
 .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--item-background-color);
     color: var(--white-font);
     margin: 5px;
@@ -162,16 +216,22 @@ header a:hover {
     border-radius: 10px;
 }
 
+.article {
+    position: relative;
+    animation-name: about_animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes about_animation {
+    0% {right: -1000px;}
+    100% {right: 0;}
+}
+
 .about h3 {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: flex-end;
-}
-
-.article {
-    display: flex;
-    justify-content: center;
-    flex-wrap: initial;
 }
 
 .contact_form {
